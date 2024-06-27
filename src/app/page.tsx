@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import Footer from '@/components/page-ui/footer';
 import Header from '@/components/page-ui/header';
 import { Button } from '@/components/ui/button';
@@ -59,7 +61,11 @@ export default function Home() {
           </div>
         </div>
         <div className='relative mr-12 mt-10 w-1/2 md:mt-0 md:w-[40%]'>
-          <img src='/player.png' className='w-full drop-shadow-lg filter' />
+          <img
+            alt='player'
+            src='/player.png'
+            className='w-full drop-shadow-lg filter'
+          />
         </div>
       </div>
       <div
@@ -76,8 +82,9 @@ export default function Home() {
               key={index}
               className='col-span-1 flex w-full flex-col items-start justify-start gap-2 overflow-hidden rounded border border-neutral-400/35 pb-2'
             >
-              <div className='flex aspect-square max-h-52 w-full items-center justify-center overflow-hidden bg-neutral-100'>
+              <div className='relative flex aspect-square max-h-52 w-full items-center justify-center overflow-hidden bg-neutral-100'>
                 <img
+                  alt={item.title}
                   src={item.img}
                   className='aspect-auto h-auto w-32 object-cover'
                 />
