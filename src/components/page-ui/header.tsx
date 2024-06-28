@@ -18,7 +18,20 @@ const Header = () => {
     { title: 'كيف نعمل', href: '#how-it-works' },
   ];
   return (
-    <header className='fixed top-0 z-50 flex w-full items-center justify-center border-b border-slate-400/35 bg-white px-7 py-3'>
+    <header className='fixed top-0 z-50 flex flex-col gap-2 w-full items-center justify-center border-b border-slate-400/35 bg-white px-7 py-3'>
+      <div className="w-full flex justify-between items-center max-w-6xl">
+        <div className="flex justify-start items-center gap-1">
+          {/* this is for email support:sadikmaroc1234@gmail.com */}
+          <p
+          className='text-xs text-neutral-500 hover:text-primary transition-all duration-300 ease-in-out cursor-pointer' 
+          >
+            للدعم الفني: sadikmaroc1234@gmail.com
+          </p>
+
+        </div>
+      <span className='text-xs text-neutral-500'>موقع شحن الرصيد</span>
+
+      </div>
       <nav className='flex w-full max-w-6xl items-center justify-between'>
         <a className='flex items-center justify-center gap-1'>
           <NavLogo className='h-10 w-10' />

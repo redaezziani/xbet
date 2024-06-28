@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Footer from '@/components/page-ui/footer';
 import Header from '@/components/page-ui/header';
 import { Button } from '@/components/ui/button';
+import { WtsBtn } from '@/components/page-ui/wts-btn';
+import { ServiceCounters } from '@/components/page-ui/service-counters';
 
 export default function Home() {
   const data = [
@@ -41,7 +43,7 @@ export default function Home() {
             وموثوقية عالية، وبأمان تام وبأقل الأسعار.
           </p>
           <div className='mt-3 flex w-full items-center justify-center gap-3 md:justify-start'>
-            <Button className='w-fit rounded-full bg-teal-500'>شحن الآن</Button>
+            <WtsBtn />
             <Button className='flex w-fit items-center justify-center gap-2 rounded-full bg-amber-400 hover:bg-amber-500/70'>
               تحويل رصيد من
               <svg
@@ -68,35 +70,8 @@ export default function Home() {
           />
         </div>
       </div>
-      <div
-        id='services'
-        className='relative mt-10 flex w-full max-w-6xl flex-col items-start justify-start gap-4 px-6 md:px-4'
-      >
-        <h2 className='text-center text-lg font-semibold text-primary'>
-          خدماتنا: نقدم لكم أفضل الحلول لتلبية احتياجاتكم
-        </h2>
-
-        <div className='grid w-full grid-cols-1 gap-5 pb-6 md:grid-cols-3'>
-          {data.map((item, index) => (
-            <div
-              key={index}
-              className='col-span-1 flex w-full flex-col items-start justify-start gap-2 overflow-hidden rounded border border-neutral-400/35 pb-2'
-            >
-              <div className='relative flex aspect-square max-h-52 w-full items-center justify-center overflow-hidden bg-neutral-100'>
-                <img
-                  alt={item.title}
-                  src={item.img}
-                  className='aspect-auto h-auto w-32 object-cover'
-                />
-              </div>
-              <div className='flex flex-col gap-3 px-2'>
-                <h2 className='text-lg font-bold text-primary'>{item.title}</h2>
-                <p className='text-neutral-800'>{item.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <ServiceCounters />
+     
       <Footer />
     </main>
   );
