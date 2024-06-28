@@ -71,7 +71,7 @@ export default function Home() {
         </div>
       </div>
       <ServiceCounters />
-     
+
       <Footer />
     </main>
   );
