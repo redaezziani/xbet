@@ -15,7 +15,7 @@
       <div className="relative max-w-6xl mt-24 flex-wrap w-full flex justify-around items-center gap-y-1 gap-x-6 ">
         {images.map((logo, index) => (
             <div
-              className="  slide flex w-[125px] items-center justify-center"
+              className="   flex  items-center justify-center"
               key={index}
             >
               <img
