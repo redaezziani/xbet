@@ -5,31 +5,15 @@ import Header from '@/components/page-ui/header';
 import { Button } from '@/components/ui/button';
 import { WtsBtn } from '@/components/page-ui/wts-btn';
 import { ServiceCounters } from '@/components/page-ui/service-counters';
+import { Layer } from '@/components/page-ui/layer';
+import { ServiceSection } from '@/components/page-ui/service-section';
 
 export default function Home() {
-  const data = [
-    {
-      title: '1XBet',
-      img: '/services/1xbet.png',
-      description: 'شحن رصيد لتطبيق 1XBet بأمان وسرعة وبأقل الأسعار.',
-    },
-    {
-      title: 'Melbet',
-      img: '/services/melbet.png',
-      description: 'شحن رصيد لتطبيق Melbet بأمان وسرعة وبأقل الأسعار.',
-    },
-    {
-      title: 'Binance',
-      img: '/services/binance.png',
-      description: 'شحن رصيد لتطبيق Binance بأمان وسرعة وبأقل الأسعار.',
-    },
-  ];
+ 
   return (
     <main className='relative flex min-h-screen flex-col items-center justify-start gap-2'>
       <Header />
-      <div className='absolute left-0 top-0 z-0 grid h-[50vh] w-full grid-cols-1 md:h-[70vh] md:grid-cols-6'>
-        <div className='col-span-4 h-full w-full rounded-bl-sm border-b border-dashed border-teal-800 bg-teal-600 shadow-lg md:border-none'></div>
-      </div>
+      <Layer />
       <div
         id='about'
         className='relative z-10 mt-32 flex w-full max-w-6xl flex-col items-center justify-start px-4 md:mt-28 md:flex-row'
@@ -71,7 +55,7 @@ export default function Home() {
         </div>
       </div>
       <ServiceCounters />
-
+      <ServiceSection />
       <Footer />
     </main>
   );
