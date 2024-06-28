@@ -1,0 +1,31 @@
+
+  
+ 
+  
+  export const InfiniteSlider = () => {
+    const images = [
+        '/bank/al-barik-bank.png',
+         '/bank/attijari.png',
+         '/bank/bank-of-africa.png',
+         '/bank/cih-bank.png',
+         '/bank/cashplus.svg',
+       ];
+       
+    return (
+      <div className="relative mt-24 flex-wrap w-full flex justify-center items-center gap-6 ">
+        {images.map((logo, index) => (
+            <div
+              className="  slide flex w-[125px] items-center justify-center"
+              key={index}
+            >
+              <img
+                className="h-28 w-28 object-contain"
+                src={logo}
+                alt="bank"
+                />
+            </div>
+          ))}
+      </div>
+    );
+  };
+  

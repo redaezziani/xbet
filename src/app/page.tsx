@@ -4,6 +4,7 @@ import { ServiceCounters } from '@/components/page-ui/service-counters';
 import { Layer } from '@/components/page-ui/layer';
 import { ServiceSection } from '@/components/page-ui/service-section';
 import { MainSection } from '@/components/page-ui/main-section';
+import { InfiniteSlider } from '@/components/page-ui/slider';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <MainSection />
       <ServiceCounters />
       <ServiceSection />
+      <InfiniteSlider />
       <Footer />
     </main>
   );

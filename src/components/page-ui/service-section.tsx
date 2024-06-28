@@ -17,16 +17,16 @@ export const ServiceSection = () => {
     },
   ];
   return (
-    <div className='mt-5 flex w-full max-w-6xl flex-col items-center justify-center gap-3'>
+    <div className='mt-10 flex w-full max-w-7xl flex-col items-center justify-center gap-3'>
       <div className='flex flex-col items-center justify-center gap-2'>
         <h2 className='text-2xl font-bold text-primary'>خدماتنا</h2>
         <p className='text-center text-slate-400'>
           نقدم لكم أفضل الخدمات وبأمان تام.
         </p>
       </div>
-      <div className='mt-10 grid w-full max-w-7xl grid-cols-1 gap-3 md:grid-cols-3'>
+      <div className='mt-10 grid w-full  max-w-6xl grid-cols-1 gap-3 md:grid-cols-3'>
         {data.map((item, index) => (
-          <div key={index} className='flex items-center justify-center gap-1'>
+          <div key={index} className='flex  items-center justify-center gap-1'>
             <div className='flex size-14 items-center justify-center rounded-sm bg-slate-100 text-primary'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -62,7 +62,7 @@ export const ServiceSection = () => {
               </svg>
             </div>
             <div className='flex flex-col items-start justify-start'>
-              <h3 className='text-lg font-bold text-slate-600'>{item.title}</h3>
+              <h3 className=' font-bold font-Playwrite text-slate-600'>{item.title}</h3>
               <p className='text-center text-sm text-slate-400'>
                 {item.description}
               </p>
