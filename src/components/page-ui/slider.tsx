@@ -12,7 +12,7 @@
        ];
        
     return (
-      <div className="relative mt-24 flex-wrap w-full flex justify-center items-center gap-6 ">
+      <div className="relative max-w-6xl mt-24 flex-wrap w-full flex justify-around items-center gap-6 ">
         {images.map((logo, index) => (
             <div
               className="  slide flex w-[125px] items-center justify-center"
