@@ -6,14 +6,14 @@ export const ServiceSection = () => {
       description: 'شحن رصيد لتطبيق 1XBet بأمان وسرعة .',
     },
     {
-      title: 'Melbet',
+      title: 'Linebet',
       img: '/services/melbet.png',
-      description: 'شحن رصيد لتطبيق Melbet بأمان وسرعة .',
+      description: 'شحن رصيد لتطبيق Linelbet بأمان وسرعة .',
     },
     {
       title: 'Binance',
       img: '/services/binance.png',
-      description: 'شحن رصيد لتطبيق Binance بأمان وسرعة .',
+      description: '   شراء الرصيد بافضل ثمن و اسرع خدمة .',
     },
   ];
   return (
@@ -63,7 +63,9 @@ export const ServiceSection = () => {
             </div>
             <div className='flex flex-col items-start justify-start'>
               <h3 className='text-lg font-bold text-slate-600'>{item.title}</h3>
-              <p className='text-center text-sm text-slate-400'>{item.description}</p>
+              <p className='text-center text-sm text-slate-400'>
+                {item.description}
+              </p>
             </div>
           </div>
         ))}
