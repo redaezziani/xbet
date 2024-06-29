@@ -43,7 +43,7 @@ export const MainSection = () => {
         >
           <WtsBtn />
           <Button className='flex w-fit items-center justify-center gap-2 rounded-full bg-amber-400 hover:bg-amber-500/70'>
-            تحويل رصيد من
+          اشترِ رصيد من Binance 
             <svg
               className='h-4 w-4 text-white'
               viewBox='0 0 126.61 126.61'

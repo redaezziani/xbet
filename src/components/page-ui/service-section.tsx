@@ -8,7 +8,7 @@ export const ServiceSection = () => {
     },
     {
       title: 'Linebet',
-      img: '/services/melbet.png',
+      img: '/services/linebet.png',
       description:
         'اشحن رصيدك لتطبيق Linebet بسرعة وأمان مع خدمة مميزة على مدار الساعة. استمتع بتجربة سلسة وآمنة.',
     },
