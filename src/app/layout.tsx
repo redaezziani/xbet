@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   title: 'موقع شحن الرصيد لتطبيقات الرهانات',
   description: 'استمتع بخدمات شحن الرصيد السريعة والآمنة لتطبيقات الرهانات مع موقعنا. اكتشف التفاصيل الآن!',
   keywords: 'شحن الرصيد, تطبيقات الرهانات, 1XBet, LineBet, Binance',
+  
+  
 };
 
 
@@ -18,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang='ar'>
       <body className={cairo.className}>
         {children}
         <SpeedInsights />
