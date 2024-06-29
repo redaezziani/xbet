@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Cairo } from 'next/font/google';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import './globals.css';
 
 const cairo = Cairo({ subsets: ['latin'] });
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={cairo.className}>{children}</body>
+      <body className={cairo.className}>
+        {children}
+        <SpeedInsights />
+        </body>
     </html>
   );
 }

@@ -1,15 +1,3 @@
-### Data Science Salary Estimator: Project Overview
+## Next js with TypeScript and Tailwind CSS web app
 
-#### Created a tool that estimates data science salaries (MAE ~ $ 11K) to help data scientists negotiate their income when they get a job.
-
-```bash
-- Scraped over 1000 job descriptions from glassdoor using python and selenium
-- Engineered features from the text of each job description to quantify the value companies put on python, excel, aws, and spark.
-- Optimized Linear, Lasso, and Random Forest Regressors using GridsearchCV to reach the best model.
-```
-
-### Code and Resources Used
-
-**Python Version:** 3.7
-**Packages:** pandas, numpy, sklearn, matplotlib, seaborn, selenium, flask, json, pickle
-**For Web Framework Requirements:** `pip install -r requirements.txt`
+This is a simple web app built with Next.js, TypeScript and Tailwind CSS. It is a simple web app that displays a list of users and their details. It also allows you to add a new user to the list.

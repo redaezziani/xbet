@@ -27,6 +27,14 @@ export const MainSection = () => {
           موقعنا يمكنك من شحن رصيدك لتطبيقات الرهانات OneXBet و LineBet بسرعة
           وموثوقية عالية، وبأمان تام وبأقل الأسعار.
         </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        className='text-neutral-100/45 text-sm'
+        >
+        اختر طريقة الدفع الخاصة بك وقم بتعبئة حساب 1XBET أو LineBET الخاص بك بسرعة وسهولة    
+        </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
