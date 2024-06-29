@@ -1,7 +1,4 @@
-import Link from "next/link";
-
-
-
+import Link from 'next/link';
 
 export const InfiniteSlider = () => {
   const images = [
@@ -14,27 +11,25 @@ export const InfiniteSlider = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-2 justify-center items-center max-w-6xl mt-24">
-      <div className="relative  flex-wrap w-full flex justify-around items-center gap-y-1 gap-x-6 ">
+    <div className='mt-24 flex max-w-6xl flex-col items-center justify-center gap-2'>
+      <div className='relative flex w-full flex-wrap items-center justify-around gap-x-6 gap-y-1'>
         {images.map((logo, index) => (
           <div
-            className="  grayscale  flex  items-center justify-center"
+            className='flex items-center justify-center grayscale'
             key={index}
           >
             <img
-              className="h-10 aspect-auto   object-contain"
+              className='aspect-auto h-10 object-contain'
               src={logo}
-              alt="bank"
+              alt='bank'
             />
           </div>
         ))}
       </div>
-      <p
-      className="text-gray-500 mt-3 text-sm font-light"
-      >
-        جميع شركائنا معتمدين وآمنين. يمكنك الثقة بهم.  <Link href="#">المزيد</Link>
+      <p className='mt-3 text-sm font-light text-gray-500'>
+        جميع شركائنا معتمدين وآمنين. يمكنك الثقة بهم.{' '}
+        <Link href='#'>المزيد</Link>
       </p>
     </div>
-
   );
 };
