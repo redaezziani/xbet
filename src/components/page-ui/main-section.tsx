@@ -24,7 +24,7 @@ export const MainSection = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className='text-neutral-100'
         >
-          موقعنا يمكنك من شحن رصيدك لتطبيقات الرهانات OneXBet و Malbet بسرعة
+          موقعنا يمكنك من شحن رصيدك لتطبيقات الرهانات OneXBet و LineBet بسرعة
           وموثوقية عالية، وبأمان تام وبأقل الأسعار.
         </motion.p>
         <motion.div
