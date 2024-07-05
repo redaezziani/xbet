@@ -15,7 +15,7 @@ export const InfiniteSlider = () => {
       <div className='relative flex w-full flex-wrap items-center justify-around gap-x-6 gap-y-1'>
         {images.map((logo, index) => (
           <div
-            className='flex items-center justify-center grayscale'
+            className='flex items-center justify-center '
             key={index}
           >
             <img
