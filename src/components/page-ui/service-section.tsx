@@ -34,7 +34,7 @@ export const ServiceSection = () => {
             key={index}
             className='relative flex flex-col items-start justify-start gap-3 overflow-hidden px-5'
           >
-            <div className='flex h-48 w-full items-center justify-center rounded-sm border border-slate-400/25 bg-slate-50 grayscale'>
+            <div className='flex h-48 w-full items-center justify-center rounded-sm border border-slate-400/25 bg-slate-50 '>
               <img
                 src={item.img}
                 alt={item.title}
