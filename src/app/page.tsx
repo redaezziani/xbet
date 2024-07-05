@@ -6,6 +6,7 @@ import { ServiceSection } from '@/components/page-ui/service-section';
 import { MainSection } from '@/components/page-ui/main-section';
 import { InfiniteSlider } from '@/components/page-ui/slider';
 import { HowITWork } from '@/components/page-ui/how-it-work';
+import ClientRev from '@/components/page-ui/client-rev';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <ServiceSection />
       <InfiniteSlider />
       <HowITWork />
+      <ClientRev />
       <Footer />
     </main>
   );
