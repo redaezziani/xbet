@@ -4,7 +4,7 @@ import React from 'react'
 const ClientRev = () => {
   return (
     <div
-    className='mt-24 relative flex px-4 w-full max-w-4xl flex-col items-center justify-center gap-2'
+    className='md:mt-32 mt-10 relative flex px-4 w-full max-w-4xl flex-col items-center justify-center gap-2'
     >
         <img src="arrow.svg" alt="quote" className=" absolute w-28 z-20 -right-32 rotate-12 -top-16" />
         <div className="w-full  ring-1 ring-primary ring-offset-2 relative flex flex-col gap-4 justify-center items-center bg-primary rounded-sm p-4 h-40 ">
