@@ -1,5 +1,4 @@
 'use client';
-import { Button } from '../ui/button';
 import { BinanceBtn } from './bnc-btn';
 import { WtsBtn } from './wts-btn';
 import { motion } from 'framer-motion';
@@ -25,7 +24,7 @@ export const MainSection = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className='text-neutral-100'
         >
-          موقعنا يمكنك من شحن رصيدك لتطبيقات الرهانات OneXBet و LineBet بسرعة
+          موقعنا يمكنك من شحن رصيدك لتطبيقات الرهانات 1XBet و LineBet بسرعة
           وموثوقية عالية، وبأمان تام وبأقل الأسعار.
         </motion.p>
         <motion.p
