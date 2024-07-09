@@ -19,7 +19,8 @@ export default function USAGE() {
         >
             ارسل رسالة إلى رقم الواتساب الخاص بالمالك ثم اختر نوع الخدمة التي تريدها واختر البنك المفضل لديك.
         </p>
-        <div className="w-80  aspect-[9/16] h-auto bordre border-slate-400/35 rounded-md overflow-hidden bg-slate-50">
+        <div className="w-80  aspect-[9/16] h-auto bordre border-slate-400 rounded-md overflow-hidden bg-slate-50">
+        <img src='/usage/image-1.jpg' className=' w-full contrast-125 aspect-auto object-contain'/>
         </div>
         <div className="flex flex-wrap gap-2 justify-center items-center">
             <WtsBtn/>

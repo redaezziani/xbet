@@ -14,7 +14,7 @@ export const MainSection = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className='text-4xl font-bold text-white'
+          className='text-4xl font-bold relative text-white'
         >
           أفضل موقع لشحن الرصيد لتطبيقات الرهانات
         </motion.h1>
@@ -39,7 +39,7 @@ export const MainSection = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className='mt-3 flex w-full items-center justify-center gap-3 md:justify-start'
+          className='mt-3 flex flex-wrap w-full items-center justify-center gap-3 md:justify-start'
         >
           <WtsBtn />
          <BinanceBtn />

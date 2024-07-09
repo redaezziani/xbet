@@ -21,7 +21,8 @@ export const ServiceSection = () => {
   ];
 
   return (
-    <div className='mt-10 flex w-full max-w-7xl flex-col items-center justify-center gap-3'>
+    <div className='mt-10 flex overflow-x-hidden w-full max-w-7xl flex-col items-center justify-center gap-3 z-0'>
+         
       <div className='flex flex-col items-center justify-center gap-2'>
         <h2 className='text-2xl font-bold text-primary'>خدماتنا</h2>
         <p className='text-center text-slate-400'>
