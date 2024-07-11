@@ -8,7 +8,7 @@ export default function Usage() {
     <div className='relative flex min-h-screen flex-col items-center justify-start gap-2'>
       <Header />
       <div className='absolute h-full min-h-screen w-full bg-gradient-to-b from-primary/20 via-amber-100/20 to-transparent' />
-      <main className='z-10 mt-44 flex min-h-[70vh] w-full max-w-6xl flex-col items-center justify-center gap-4'>
+      <main className='z-10 mt-44 px-6 md:px-0 flex min-h-[70vh] w-full max-w-6xl flex-col items-center justify-center gap-4'>
         <section>
           {' '}
           {/* Use <section> to group related content */}
