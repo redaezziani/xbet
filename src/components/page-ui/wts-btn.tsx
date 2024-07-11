@@ -11,7 +11,7 @@ export const WtsBtn = (props: WtsBtnProps) => {
 
   return (
     <Link href={url}>
-      <Button className='flex select-none w-fit items-center justify-center gap-2 rounded-full bg-teal-500'>
+      <Button className='flex select-none w-fit items-center rounded-none justify-center gap-2  bg-teal-500'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 24 24'

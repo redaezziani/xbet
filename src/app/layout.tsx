@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ar'>
-      <body className={cairo.className}>
+      <body className={cairo.className} >
         {children}
         <SpeedInsights />
         </body>
