@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { Cairo } from 'next/font/google';
+import {  Noto_Sans_Arabic } from 'next/font/google';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
 
-const cairo = Cairo({ subsets: ['latin'] });
+const Noto = Noto_Sans_Arabic({ subsets: ['arabic'] });
 
 export const metadata: Metadata = {
   title: 'موقع شحن الرصيد لتطبيقات الرهانات في المغرب',
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ar'>
-      <body className={cairo.className}>
+      <body className={Noto.className}>
         {children}
         <SpeedInsights />
       </body>

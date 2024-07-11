@@ -55,7 +55,7 @@ export const HowITWork = () => {
                   src={step.icon}
                 />
               </div>
-              <p className='text-4xl font-semibold text-slate-200/50'>
+              <p className='text-4xl font-semibold text-slate-200/70'>
                 0{index + 1}
               </p>
             </div>

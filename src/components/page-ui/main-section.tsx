@@ -14,7 +14,7 @@ export const MainSection = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className='relative text-4xl font-bold text-white'
+          className='relative text-4xl leading-relaxed font-bold text-white'
         >
           أفضل موقع لشحن الرصيد لتطبيقات الرهانات
         </motion.h1>
@@ -22,9 +22,9 @@ export const MainSection = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className='text-neutral-100'
+          className='text-neutral-100 leading-relaxed'
         >
-          موقعنا يمكنك من شحن رصيدك لتطبيقات الرهانات 1XBet و LineBet بسرعة
+          موقعنا يمكنك من شحن رصيدك لتطبيقات الرهانات  <span className=' font-roboto'>1XBet</span> و <span className=' font-roboto'>LineBet</span> بسرعة
           وموثوقية عالية، وبأمان تام وبأقل الأسعار.
         </motion.p>
         <motion.p
@@ -33,7 +33,7 @@ export const MainSection = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
           className='text-sm text-neutral-100/45'
         >
-          اختر طريقة الدفع الخاصة بك وقم بتعبئة حساب 1XBET أو LineBET الخاص بك
+          اختر طريقة الدفع الخاصة بك وقم بتعبئة حساب <span className=' font-roboto'>1XBET</span> أو <span className=' font-roboto'>LineBET</span> الخاص بك
           بسرعة وسهولة
         </motion.p>
         <motion.div

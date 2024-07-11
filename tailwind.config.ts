@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        Playwrite: ['"Playwrite NG Modern"', 'cursive'],
+        roboto : ['Roboto', 'sans-serif'],
       },
       colors: {
         border: 'hsl(var(--border))',
