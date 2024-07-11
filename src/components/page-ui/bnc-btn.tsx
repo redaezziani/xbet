@@ -8,8 +8,8 @@ export const BinanceBtn = () => {
 
   return (
     <Link href={url}>
-      <Button className='flex select-none w-fit items-center rounded-none justify-center gap-2  bg-amber-400 hover:bg-amber-500/90'>
-      شراء الرصيد من Binance
+      <Button className='flex w-fit select-none items-center justify-center gap-2 rounded-none bg-amber-400 hover:bg-amber-500/90'>
+        شراء الرصيد من Binance
         <svg
           className='h-4 w-4 text-white'
           viewBox='0 0 126.61 126.61'

@@ -14,7 +14,7 @@ export const MainSection = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className='text-4xl font-bold relative text-white'
+          className='relative text-4xl font-bold text-white'
         >
           أفضل موقع لشحن الرصيد لتطبيقات الرهانات
         </motion.h1>
@@ -31,18 +31,19 @@ export const MainSection = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-        className='text-neutral-100/45 text-sm'
+          className='text-sm text-neutral-100/45'
         >
-        اختر طريقة الدفع الخاصة بك وقم بتعبئة حساب 1XBET أو LineBET الخاص بك بسرعة وسهولة    
+          اختر طريقة الدفع الخاصة بك وقم بتعبئة حساب 1XBET أو LineBET الخاص بك
+          بسرعة وسهولة
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className='mt-3 flex flex-wrap w-full items-center justify-center gap-3 md:justify-start'
+          className='mt-3 flex w-full flex-wrap items-center justify-center gap-3 md:justify-start'
         >
           <WtsBtn />
-         <BinanceBtn />
+          <BinanceBtn />
         </motion.div>
       </div>
       <motion.div

@@ -2,48 +2,21 @@ import React from 'react';
 import Link from 'next/link';
 
 const Footer = () => {
-  const productLinks = [
+  const webSiteLinks = [
     { title: 'التسعير', href: '#' },
     { title: 'سجل التغييرات', href: '#' },
     { title: 'الوثائق', href: '#' },
     { title: 'تنزيل', href: '#' },
   ];
 
-  const companyLinks = [
-    { title: 'من نحن', href: '#' },
-    { title: 'المدونة', href: '#' },
-    { title: 'وظائف', href: '#' },
-    { title: 'العملاء', href: '#' },
-    { title: 'غرفة الأخبار', href: '#' },
-    { title: 'خريطة الموقع', href: '#' },
-  ];
-
-  const resourceLinks = [
-    { title: 'المجتمع', href: '#' },
-    { title: 'المساعدة والدعم', href: '#' },
-    { title: 'الكتاب الإلكتروني', href: '#' },
-    { title: 'الجديد', href: '#' },
-    { title: 'الحالة', href: '#' },
-  ];
-
-  const developerLinks = [
-    { title: 'واجهة برمجة التطبيقات', href: '#' },
-    { title: 'الحالة', href: '#' },
-    { title: 'GitHub', href: '#' },
-  ];
-
-  const industryLinks = [
-    { title: 'الخدمات المالية', href: '#' },
-    { title: 'التعليم', href: '#' },
-  ];
   const phoneNumber = '212669461148';
   const message = 'أريد شحن رصيد لتطبيق 1XBet أو Melbet أو Binance';
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
-    <footer className='mt-5 w-full border-t border-slate-200 bg-white'>
+    <footer className='mt-5 w-full bg-white'>
       <div className='mx-auto max-w-6xl px-6 py-10 lg:px-8'>
-        <div className='mb-10 grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5'>
+        <div className='mb-10 grid grid-cols-2 gap-6'>
           <div className='col-span-full hidden lg:col-span-1 lg:block'>
             <div className='flex items-center justify-start gap-1'>
               <p className='flex-none text-xl font-semibold dark:text-white'>
@@ -68,10 +41,10 @@ const Footer = () => {
 
           <div>
             <h4 className='text-xs font-semibold uppercase text-gray-900'>
-              المنتج
+              روابط الموقع
             </h4>
-            <ul className='mt-3 space-y-3 text-sm'>
-              {productLinks.map((link, index) => (
+            <ul className='mt-3 flex w-full gap-3 text-sm'>
+              {webSiteLinks.map((link, index) => (
                 <li key={index}>
                   <Link href={link.href}>
                     <p className='text-gray-600 hover:text-gray-800'>
@@ -83,70 +56,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h4 className='text-xs font-semibold uppercase text-gray-900'>
-              الشركة
-            </h4>
-            <ul className='mt-3 space-y-3 text-sm'>
-              {companyLinks.map((link, index) => (
-                <li key={index}>
-                  <Link href={link.href}>
-                    <p className='text-gray-600 hover:text-gray-800'>
-                      {link.title}
-                    </p>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className='text-xs font-semibold uppercase text-gray-900'>
-              الموارد
-            </h4>
-            <ul className='mt-3 space-y-3 text-sm'>
-              {resourceLinks.map((link, index) => (
-                <li key={index}>
-                  <Link href={link.href}>
-                    <p className='text-gray-600 hover:text-gray-800'>
-                      {link.title}
-                    </p>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className='text-xs font-semibold uppercase text-gray-900'>
-              المطورين
-            </h4>
-            <ul className='mt-3 space-y-3 text-sm'>
-              {developerLinks.map((link, index) => (
-                <li key={index}>
-                  <Link href={link.href}>
-                    <p className='text-gray-600 hover:text-gray-800'>
-                      {link.title}
-                    </p>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <h4 className='mt-7 text-xs font-semibold uppercase text-gray-900'>
-              الصناعات
-            </h4>
-            <ul className='mt-3 space-y-3 text-sm'>
-              {industryLinks.map((link, index) => (
-                <li key={index}>
-                  <Link href={link.href}>
-                    <p className='text-gray-600 hover:text-gray-800'>
-                      {link.title}
-                    </p>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <div></div>
         </div>
 
         <div className='mt-5 border-t border-gray-200 pt-5'>

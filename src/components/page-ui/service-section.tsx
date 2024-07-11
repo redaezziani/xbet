@@ -21,8 +21,7 @@ export const ServiceSection = () => {
   ];
 
   return (
-    <div className='mt-10 flex overflow-x-hidden w-full max-w-7xl flex-col items-center justify-center gap-3 z-0'>
-         
+    <div className='z-0 mt-10 flex w-full max-w-7xl flex-col items-center justify-center gap-3 overflow-x-hidden'>
       <div className='flex flex-col items-center justify-center gap-2'>
         <h2 className='text-2xl font-bold text-primary'>خدماتنا</h2>
         <p className='text-center text-slate-400'>
@@ -35,7 +34,7 @@ export const ServiceSection = () => {
             key={index}
             className='relative flex flex-col items-start justify-start gap-3 overflow-hidden px-5'
           >
-            <div className='flex h-48 w-full items-center justify-center rounded-sm border border-slate-400/25 bg-slate-50 '>
+            <div className='flex h-48 w-full items-center justify-center rounded-sm border border-slate-400/25 bg-slate-50'>
               <img
                 src={item.img}
                 alt={item.title}

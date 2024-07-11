@@ -14,10 +14,7 @@ export const InfiniteSlider = () => {
     <div className='mt-24 flex max-w-6xl flex-col items-center justify-center gap-2'>
       <div className='relative flex w-full flex-wrap items-center justify-around gap-x-6 gap-y-1'>
         {images.map((logo, index) => (
-          <div
-            className='flex items-center justify-center '
-            key={index}
-          >
+          <div className='flex items-center justify-center' key={index}>
             <img
               className='aspect-auto h-10 object-contain'
               src={logo}

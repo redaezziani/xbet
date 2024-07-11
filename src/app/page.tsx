@@ -12,7 +12,7 @@ import AccountCreationInfo from '@/components/page-ui/account-creationinfo';
 export default function Home() {
   return (
     <main className='relative flex min-h-screen flex-col items-center justify-start gap-2'>
-        {/* <div className="w-full left-0 top-0 z-0 h-full min-h-screen bg-gradient-to-b from-primary/20 via-amber-100/20 to-transparent absolute "/> */}
+      {/* <div className="w-full left-0 top-0 z-0 h-full min-h-screen bg-gradient-to-b from-primary/20 via-amber-100/20 to-transparent absolute "/> */}
       <Header />
       <Layer />
       <MainSection />
@@ -20,7 +20,7 @@ export default function Home() {
       <ServiceSection />
       <InfiniteSlider />
       <HowITWork />
-      <AccountCreationInfo/>
+      <AccountCreationInfo />
       {/* <ClientRev /> */}
       <Footer />
     </main>
