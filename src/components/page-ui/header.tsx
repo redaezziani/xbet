@@ -32,9 +32,16 @@ const Header = () => {
       href: '#how-it-works',
     },
     {
-      title: 'الأسعار',
+      // this is for how to use our service
+      title: 'كيفية الاستخدام',
       type: 'link',
       href: '/usage',
+    },
+    {
+      // this is for how to create a linebet account and 1xbet account
+      title: 'كيفية إنشاء حساب',
+      type: 'link',
+      href: '/create-account',
     },
   ];
   return (
@@ -43,7 +50,8 @@ const Header = () => {
         <div className='flex items-center justify-start gap-1'>
           {/* this is for email support:sadikmaroc1234@gmail.com */}
           <p className='cursor-pointer text-xs text-neutral-500 transition-all duration-300 ease-in-out hover:text-primary'>
-            للدعم الفني: sadikmaroc1234@gmail.com
+            للدعم الفني:{' '}
+            <span className='font-roboto'>sadikmaroc1234@gmail.com</span>
           </p>
         </div>
         <span className='text-xs text-neutral-500'>موقع شحن الرصيد</span>

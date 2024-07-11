@@ -3,10 +3,11 @@ import Link from 'next/link';
 
 const Footer = () => {
   const webSiteLinks = [
-    { title: 'التسعير', href: '#' },
-    { title: 'سجل التغييرات', href: '#' },
-    { title: 'الوثائق', href: '#' },
-    { title: 'تنزيل', href: '#' },
+    { title: 'الرئيسية', href: '/' }, // From header
+    { title: 'من نحن', href: '#about' }, // From header
+    { title: 'خدماتنا', href: '#services' }, // From header
+    { title: 'كيف نعمل', href: '#how-it-works' }, // From header
+    { title: 'الأسعار', href: '/usage' }, // From header
   ];
 
   const phoneNumber = '212669461148';
@@ -14,7 +15,7 @@ const Footer = () => {
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
-    <footer className='mt-5 w-full bg-white'>
+    <footer className='w-full bg-neutral-50'>
       <div className='mx-auto max-w-6xl px-6 py-10 lg:px-8'>
         <div className='mb-10 grid grid-cols-2 gap-6'>
           <div className='col-span-full hidden lg:col-span-1 lg:block'>
@@ -39,11 +40,11 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
+          <div className='col-span-full flex flex-col gap-3 text-gray-900 lg:col-span-1'>
             <h4 className='text-xs font-semibold uppercase text-gray-900'>
               روابط الموقع
             </h4>
-            <ul className='mt-3 flex w-full gap-3 text-sm'>
+            <ul className='mt-3 w-full gap-3 text-sm'>
               {webSiteLinks.map((link, index) => (
                 <li key={index}>
                   <Link href={link.href}>
@@ -80,7 +81,8 @@ const Footer = () => {
                 </button>
               </div>
               <p className='text-xs text-gray-600 sm:text-sm'>
-                دعم فني: sadikmaroc1234@gmail.com
+                دعم فني:{' '}
+                <span className='font-roboto'>sadikmaroc1234@gmail.com</span>
               </p>
             </div>
             <div className='mt-5 flex space-x-4 sm:mt-0 sm:justify-end'>
