@@ -35,25 +35,16 @@ export const ServiceSection = () => {
         </p>
       </div>
       <div className='relative mt-10 grid w-full max-w-6xl grid-cols-1 gap-y-4 md:mt-20 md:grid-cols-3'>
-        <div className='absolute grid h-full w-full grid-cols-1 md:grid-cols-3'>
-          <hr className='col-start-2 w-full border border-dashed border-border md:h-full md:w-[.00001rem]' />
-          <hr className='hidden border border-dashed border-border md:block md:h-full md:w-[.00001rem]' />
-        </div>
+
         {data.map((item, index) => (
           <div
             key={index}
-            className='relative flex aspect-square flex-col items-center justify-center gap-3 overflow-hidden border-b border-dashed p-7'
+            className='relative flex aspect-square flex-col items-center justify-center gap-3 overflow-hidden border border-dashed p-7'
           >
-            <div className='flex w-full items-center justify-between'>
-              <div className={`size-20 ${index === 2 ? '-mt-9 size-28' : ''}`}>
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  className='h-auto w-44 object-contain'
-                />
-              </div>
+            <div className='flex w-full items-center justify-center'>
+              <img src={item.img} alt={item.title} className={`w-1/2 ${index === 2 ? ' -mt-10' : ''}`} />
             </div>
-            <div className='mt-2 flex flex-col gap-1 px-2'>
+            <div className={`mt-2 flex flex-col gap-1 px-2 ${index === 2 ? ' -mt-10' : ''} `}>
               <h3 className='font-roboto text-lg font-bold text-primary'>
                 {item.title}
               </h3>
