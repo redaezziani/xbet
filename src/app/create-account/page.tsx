@@ -35,7 +35,7 @@ export default function Usage() {
         <div className="w-full col-span-1 border border-border rounded-md ">
         <div className="w-full relative aspect-video overflow-hidden rounded-md bg-slate-100">
             <h1>
-                الخطوة الأولى
+                 
             </h1>
         </div>
         </div>
