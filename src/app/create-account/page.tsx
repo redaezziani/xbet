@@ -22,22 +22,39 @@ export default function Usage() {
         يمكنك إنشاء حساب على موقعنا بسهولة وبسرعة، كل ما عليك هو اتباع الخطوات التالية:
       </p>
       <div className="w-full mt-5 place-items-center place-content-center grid grid-cols-1 md:grid-cols-3 gap-2">
-        <div className="w-full col-span-1 border border-border rounded-md ">
-        <div className="w-full relative aspect-video overflow-hidden rounded-md bg-slate-100">
-            <Image src={'/create-account/image-1.jpg'} fill   alt="1xbet" />
-        </div>
-        </div>
-        <div className="w-full col-span-1 border border-border rounded-md ">
-        <div className="w-full relative aspect-video overflow-hidden rounded-md bg-slate-100">
+        <div className="w-full flex-col flex justify-start items-center gap-2 col-span-1 ">
+        <div className="w-full relative aspect-video border border-border rounded-md  overflow-hidden  bg-slate-100">
             <Image src={'/create-account/image-2.jpg'} fill   alt="1xbet" />
         </div>
+       <div className="flex w-full flex-col gap-2">
+       <h3
+       className='text-lg font-semibold text-primary'
+       >
+            افتح حسابًا جديدًا الآن 1xbet
+        </h3>
+        <p
+        className='text-neutral-500 '
+        >
+            ابدأ رحلتك مع تطبيقات الرهانات الرائعة واستمتع بالعروض والمكافآت الحصرية.
+        </p>
+       </div>
         </div>
-        <div className="w-full col-span-1 border border-border rounded-md ">
-        <div className="w-full relative aspect-video overflow-hidden rounded-md bg-slate-100">
-            <h1>
-                 
-            </h1>
+        <div className="w-full flex-col flex justify-start items-center gap-2 col-span-1 ">
+        <div className="w-full relative aspect-video border border-border rounded-md  overflow-hidden  bg-slate-100">
+            <Image src={'/create-account/image-1.jpg'} fill   alt="Linebet" />
         </div>
+         <div className="flex w-full flex-col gap-2">
+         <h3
+            className='text-lg font-semibold text-primary'
+            >
+                افتح حسابًا جديدًا الآن Linebet
+            </h3>
+            <p
+            className='text-neutral-500 '
+            >
+                ابدأ رحلتك مع تطبيقات الرهانات الرائعة واستمتع بالعروض والمكافآت الحصرية.
+            </p>
+            </div>
         </div>
 
       </div>
