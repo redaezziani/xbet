@@ -8,7 +8,7 @@ export const BinanceBtn = () => {
 
   return (
     <Link href={url}>
-      <Button className='flex w-fit select-none items-center justify-center gap-2 rounded-none bg-amber-400 hover:bg-amber-500/90'>
+      <Button className='flex w-fit select-none items-center justify-center gap-2 rounded bg-amber-400 hover:bg-amber-500/90'>
         شراء الرصيد من <span className='font-roboto'>Binance</span>
         <svg
           className='h-4 w-4 text-white'
