@@ -7,6 +7,7 @@ import { MainSection } from '@/components/page-ui/main-section';
 import { InfiniteSlider } from '@/components/page-ui/slider';
 import { HowITWork } from '@/components/page-ui/how-it-work';
 import AccountCreationInfo from '@/components/page-ui/account-creationinfo';
+import { PhoneInfiniteSlider } from '@/components/page-ui/phone-slider';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <ServiceCounters />
       <ServiceSection />
       <InfiniteSlider />
+      <PhoneInfiniteSlider/>
       <HowITWork />
       <AccountCreationInfo />
       {/* <ClientRev /> */}

@@ -8,18 +8,18 @@ export const InfiniteSlider = () => {
     '/bank/attijari.png',
     '/bank/cih-bank.png',
     '/bank/orange.jpg',
+    '/bank/lbankalik.png',
   ];
 
 
   return (
-    <div className='mt-24 w-full flex max-w-6xl flex-col items-center justify-center gap-2'>
+    <div className='mt-24  w-full hidden md:flex max-w-6xl flex-col items-center justify-center gap-2'>
       <div
       id='#slide-wrapper'
       className='relative  flex  w-full h-20 overflow-hidden   flex-wrap items-center justify-around gap-x-6 gap-y-1'>
         {images.map((logo, index) => (
 
-                <img key={index} src={logo} className={` aspect-auto h-6 md:h-10  item item-${index+1} absolute `}/>
-
+                <img key={index} src={logo} className={` aspect-auto h-6 md:h-10 ${logo=='' ? 'ml-5' :''}  item item-${index+1} absolute `}/>
         ))}
       </div>
       <p className='mt-3 text-sm font-light text-gray-500'>

@@ -1,6 +1,6 @@
 export const Layer = () => {
   return (
-    <div className='absolute left-0 top-0 z-0 grid h-[50vh] w-full grid-cols-1 md:h-[70vh] md:grid-cols-6'>
+    <div className='absolute left-0 top-0 z-0 grid h-[60vh] w-full grid-cols-1 md:h-[70vh] md:grid-cols-6'>
       <div className='absolute z-20 h-full w-full bg-gradient-to-b from-transparent to-slate-900/40'></div>
       <svg
         className='absolute bottom-0 left-0 z-10 w-80'

@@ -46,23 +46,14 @@ const Header = () => {
   ];
   return (
     <header className='fixed top-0 z-50 flex w-full flex-col items-center justify-center gap-2 border-b border-slate-400/35 bg-white px-7 py-3'>
-      <div className='flex w-full max-w-6xl items-center justify-between'>
-        <div className='flex items-center justify-start gap-1'>
-          {/* this is for email support:sadikmaroc1234@gmail.com */}
-          <p className='cursor-pointer text-xs text-neutral-500 transition-all duration-300 ease-in-out hover:text-primary'>
-            للدعم الفني:{' '}
-            <span className='font-roboto'>sadikmaroc1234@gmail.com</span>
-          </p>
-        </div>
-        <span className='text-xs text-neutral-500'>موقع شحن الرصيد</span>
-      </div>
+    
       <nav className='flex w-full max-w-6xl items-center justify-between'>
         <a className='flex items-center justify-center gap-3'>
           <NavLogo className='h-10 w-10' />
           <h1
-          className=' text-lg text-primary font-bold'
+          className=' text-lg mt-2 font-roboto text-primary font-bold'
           >
-          كورة بت
+           Melfot 
           </h1>
         </a>
         <div className='hidden gap-4 md:flex'>
@@ -124,6 +115,7 @@ const MobileNav = ({
     <Sheet>
       <SheetTrigger>
         <svg
+        aria-label='Open Menu'
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 24 24'
           width={20}
