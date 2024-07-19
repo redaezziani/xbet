@@ -57,8 +57,13 @@ const Header = () => {
         <span className='text-xs text-neutral-500'>موقع شحن الرصيد</span>
       </div>
       <nav className='flex w-full max-w-6xl items-center justify-between'>
-        <a className='flex items-center justify-center gap-1'>
+        <a className='flex items-center justify-center gap-3'>
           <NavLogo className='h-10 w-10' />
+          <h1
+          className=' text-lg text-primary font-bold'
+          >
+          كورة بت
+          </h1>
         </a>
         <div className='hidden gap-4 md:flex'>
           {navLinks.map((link, index) => (

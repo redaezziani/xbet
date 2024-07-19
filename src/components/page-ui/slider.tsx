@@ -18,7 +18,7 @@ export const InfiniteSlider = () => {
       className='relative  flex  w-full h-20 overflow-hidden   flex-wrap items-center justify-around gap-x-6 gap-y-1'>
         {images.map((logo, index) => (
 
-                <img src={logo} className={` aspect-auto h-6 md:h-10  item item-${index+1} absolute `}/>
+                <img key={index} src={logo} className={` aspect-auto h-6 md:h-10  item item-${index+1} absolute `}/>
 
         ))}
       </div>

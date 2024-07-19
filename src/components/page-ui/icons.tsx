@@ -175,8 +175,8 @@ export const SparkIcon = (props: any) => {
         y1='11.2713'
         y2='22.9314'
       >
-        <stop offset='0' stop-color='#ffcf5a' />
-        <stop offset='1' stop-color='#fea254' />
+        <stop offset='0' stopColor='#ffcf5a' />
+        <stop offset='1' stopColor='#fea254' />
       </linearGradient>
       <linearGradient
         id='e'
@@ -186,8 +186,8 @@ export const SparkIcon = (props: any) => {
         y1='29.2903'
         y2='16.5541'
       >
-        <stop offset='0' stop-color='#ff886d' />
-        <stop offset='1' stop-color='#ff886d' stop-opacity='0' />
+        <stop offset='0' stopColor='#ff886d' />
+        <stop offset='1' stopColor='#ff886d' stopOpacity='0' />
       </linearGradient>
       <linearGradient
         id='f'
@@ -197,8 +197,8 @@ export const SparkIcon = (props: any) => {
         y1='5.86949'
         y2='9.62239'
       >
-        <stop offset='0' stop-color='#ffda72' />
-        <stop offset='1' stop-color='#f7a967' />
+        <stop offset='0' stopColor='#ffda72' />
+        <stop offset='1' stopColor='#f7a967' />
       </linearGradient>
       <linearGradient
         id='g'
@@ -208,8 +208,8 @@ export const SparkIcon = (props: any) => {
         y1='11.9803'
         y2='7.85532'
       >
-        <stop offset='0' stop-color='#fda071' />
-        <stop offset='1' stop-color='#fda071' stop-opacity='0' />
+        <stop offset='0' stopColor='#fda071' />
+        <stop offset='1' stopColor='#fda071' stopOpacity='0' />
       </linearGradient>
       <radialGradient
         id='h'
@@ -219,8 +219,8 @@ export const SparkIcon = (props: any) => {
         gradientUnits='userSpaceOnUse'
         r='1'
       >
-        <stop offset='.364601' stop-color='#ffbc64' />
-        <stop offset='1' stop-color='#ff8f6b' />
+        <stop offset='.364601' stopColor='#ffbc64' />
+        <stop offset='1' stopColor='#ff8f6b' />
       </radialGradient>
       <g filter='url(#a)'>
         <path
