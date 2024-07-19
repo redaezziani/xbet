@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const ServiceSection = () => {
   const data = [
     {
@@ -41,8 +43,11 @@ export const ServiceSection = () => {
             key={index}
             className='relative flex aspect-square flex-col items-center justify-center gap-3 overflow-hidden border border-dashed p-7'
           >
-            <div className='flex w-full items-center justify-center'>
-              <img src={item.img} alt={item.title} className={`w-1/2 ${index === 2 ? ' -mt-10' : ''}`} />
+            <div className='flex w-full relative items-center justify-center'>
+              <Image
+              width={100}
+                height={100}
+              src={item.img} alt={item.title} className={`w-1/2 ${index === 2 ? ' -mt-10' : ''}`} />
             </div>
             <div className={`mt-2 flex flex-col gap-1 px-2 ${index === 2 ? ' -mt-10' : ''} `}>
               <h3 className='font-roboto text-lg font-bold text-primary'>

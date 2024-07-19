@@ -21,7 +21,6 @@ export default function Home() {
       <PhoneInfiniteSlider/>
       <HowITWork />
       <AccountCreationInfo />
-      {/* <ClientRev /> */}
       <Footer />
     </main>
   );

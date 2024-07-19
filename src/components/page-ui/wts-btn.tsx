@@ -6,7 +6,7 @@ export type WtsBtnProps = {};
 
 export const WtsBtn = (props: WtsBtnProps) => {
   const phoneNumber = '212669461148';
-  const message = 'أريد شحن رصيد لتطبيق 1XBet أو Melbet أو Binance';
+  const message = 'أريد شحن رصيد لتطبيق 1XBet أو Linebet أو Binance';
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (

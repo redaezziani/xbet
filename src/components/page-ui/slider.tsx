@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const InfiniteSlider = () => {
@@ -19,7 +20,14 @@ export const InfiniteSlider = () => {
       className='relative  flex  w-full h-20 overflow-hidden   flex-wrap items-center justify-around gap-x-6 gap-y-1'>
         {images.map((logo, index) => (
 
-                <img key={index} src={logo} className={` aspect-auto h-6 md:h-10 ${logo=='' ? 'ml-5' :''}  item item-${index+1} absolute `}/>
+                <Image
+                alt='logo'
+                placeholder='blur'
+                blurDataURL={logo}
+                height={100}
+                width={100}
+                key={index} src={logo}
+                className={` aspect-auto h-6 md:h-10 ${logo=='' ? 'ml-5' :''}  item item-${index+1} absolute `}/>
         ))}
       </div>
       <p className='mt-3 text-sm font-light text-gray-500'>
