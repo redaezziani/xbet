@@ -26,8 +26,8 @@ export const PhoneInfiniteSlider = () => {
                         alt='logo'
                         placeholder='blur'
                         blurDataURL={logo}
-                        height={50}
-                        width={50}
+                        height={80}
+                        width={80}
 
                         key={index} src={logo} className={` aspect-auto h-6 md:h-10  item-phone-slide-1 item-phone-s1-${index + 1} absolute `} />
                 ))}
@@ -41,7 +41,7 @@ export const PhoneInfiniteSlider = () => {
                         alt='logo'
                         placeholder='blur'
                         blurDataURL={logo}
-                        height={50}
+                        height={100}
                         width={50}
                         key={index} src={logo} className={` aspect-auto h-6 md:h-10  item-phone-slide-2 item-phone-s2-${index + 1} absolute `} />
                 ))}
